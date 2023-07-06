@@ -18,7 +18,7 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        <span style={headingAccentStyles}>Under construction</span>
+        <span style={headingAccentStyles}>Under construction.</span>
       </h1>
 
       
