@@ -3,13 +3,13 @@
  */
 module.exports = {
     siteMetadata: {
-        title: `Svetlana Tungusova Art`,
-        siteUrl: `https://www.stunart.me`
+        title: `Kortz App`,
+        siteUrl: `https://www.kortz.app`
     },
     plugins: [{
         resolve: `gatsby-plugin-gtag`,
         options: {
-            trackingId: "G-QELKN47GG3",
+            trackingId: "G-5KNHWVZT9N",
             head: true,
             anonymize: true
         }
