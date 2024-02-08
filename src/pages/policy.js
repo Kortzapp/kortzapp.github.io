@@ -4,8 +4,8 @@ const PolicyPage = () => (
     <main>
         <h1>Privacy Policy</h1>
         <p>
-            This privacy policy explains how our organization uses the personal data
-            collected from you when you use our app.
+            This privacy policy explains how our organization (Kortz) uses the personal data
+            collected from you when you use our app Kortz.
         </p>
 
         <h2>Topics:</h2>
