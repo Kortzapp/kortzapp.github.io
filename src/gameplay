@@ -1,0 +1,25 @@
+if created on Jan 1:
+Jan 1
+Jan 2
+Jan 3
+Jan 4
+Jan 7
+Jan 10
+Jan 16
+Jan 26
+Feb 11
+Mar 8
+Apr 19
+Jun 26
+Oct 14
+Apr 10
+
+Levels:
+1 - 4x4
+1 - guess translation from 4
+2 - guess original from 4
+3 - type in original from given letters and some letter open
+4 - type in original from keyboard and some letters open
+5? - Cloze Deletion Test
+
+every time an incorrect answer is provided, the level is decremented and cool-down is decreased
