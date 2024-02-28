@@ -20,6 +20,7 @@ const Menu = ({title}) => {
                 <div className="dialog-body">
                     <Link to="/" onClick={() => setDialogOpen(false)}>Home</Link>
                     <Link to="/about" onClick={() => setDialogOpen(false)}>About</Link>
+                    <Link to="/policy" onClick={() => setDialogOpen(false)}>Privacy policy</Link>
                 </div>
             </Dialog>
         )}

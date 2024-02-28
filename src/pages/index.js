@@ -72,6 +72,10 @@ const IndexPage = () => {
                     </section>
                     <section>
                         <h3><Link to="/stage">Current Development Stage</Link></h3>
+                        <div>
+                            You can always decide to quit, we will send you all your cards in a desirable format then.
+                            Of course we don't want this to happen, therefore we try to provide the best support possible.
+                        </div>
                     </section>
                 </div>
                 <div>

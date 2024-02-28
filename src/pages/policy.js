@@ -47,8 +47,8 @@ const PolicyPage = () => (
 
         <h3>How We Store Your Data:</h3>
         <p>
-            Your data is securely stored at a datacenter located in Germany in a
-            private database. Access to this database is only available to a limited
+            Your data is securely stored at a datacenter located in Germany. Access to this database is only available
+            to a limited
             number of people who are legally bound to protect your data.
         </p>
 
