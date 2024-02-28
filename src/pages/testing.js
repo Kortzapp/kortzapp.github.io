@@ -17,7 +17,7 @@ const Testing = () => {
                 <section>
                     <h3>When</h3>
                     <p>
-                        The closed testing will continue for two weeks up to the end of March'24. The start date to be announced in the channel. That's an officiall part required by Google Play. You can still start using the app right after your registration as a tester
+                        The closed testing will continue for two weeks up to the end of March'24. The start date to be announced in the <a href={"https://t.me/kortzapp"}>communication channel</a>. That's an officiall part required by Google Play. You can still start using the app right after your registration as a tester
                     </p>
                 </section>
                 <section>
