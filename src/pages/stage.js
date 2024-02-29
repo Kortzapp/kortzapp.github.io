@@ -48,13 +48,22 @@ const Stage = () => {
                                 translation suggestions
                             </li>
                             <li>
-                                fine-tuning your learning experience
+                                words suggestions
+                            </li>
+                            <li>
+                                fine-tuning learning experience
                             </li>
                             <li>
                                 flexible cards sharing options
                             </li>
                             <li>
-                                creating cards from external sources (camera, text, sound record, etc...)
+                                context-rich words repetition
+                            </li>
+                            <li>
+                                creating cards from external sources (camera, browser, sound record, etc...)
+                            </li>
+                            <li>
+                                high quality pronunciation
                             </li>
                         </ul>
                     </p>
