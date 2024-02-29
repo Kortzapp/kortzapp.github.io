@@ -79,7 +79,8 @@ const IndexPage = () => {
                     </section>
                 </div>
                 <div>
-                    In case you have any questions, ideas, comments, feel free to contact us by email: <a href='mailto:contact@kortz.app'>contact@kortz.app</a>
+                    In case you have any questions, ideas, comments, feel free to contact us by email: <a href='mailto:contact@kortz.app'>contact@kortz.app</a>,
+                    or join us on Telegram: <a href={"https://t.me/kortzapp"}>Kortz channel</a>
                 </div>
             </div>
         </main>
