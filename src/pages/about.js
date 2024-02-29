@@ -73,12 +73,14 @@ const About = () => {
             <section>
                 <h3>Building Your Own Library</h3>
                 <p>
-                    We advise users to build their own library rather than relying on pre-existing ones. Learning
-                    unnecessary information can lead to <a
-                    href={"https://en.wikipedia.org/wiki/Retrieval-induced_forgetting"}>retrieval-induced forgetting</a>.
-                    Our app prioritizes relevant
-                    content, aligning seamlessly with your language apps, books, videos, and other resources,
-                    ensuring a focused and personalized language learning experience.
+                    We aim to develop a user-friendly library user experience, simplifying the card creation process for
+                    you. Our goal is to promote users in crafting their own cards, discouraging dependence on
+                    pre-existing ones.
+                    Learning superfluous information can contribute to retrieval-induced forgetting,
+                    as explained <a href={"https://en.wikipedia.org/wiki/Retrieval-induced_forgetting"}>here</a>.
+                    Your mission is to curate relevant content with the assistance of language apps, books, videos,
+                    daily experiences, and more. This approach ensures that the app delivers a concentrated and
+                    personalized language learning experience.
                 </p>
             </section>
             <section>
