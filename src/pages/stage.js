@@ -18,6 +18,12 @@ const Stage = () => {
                                 create your own cards
                             </li>
                             <li>
+                                set card tags for convenient filtering
+                            </li>
+                            <li>
+                                set card tip to help you recall the word
+                            </li>
+                            <li>
                                 share text from external resource with the app to create a new card
                             </li>
                             <li>
