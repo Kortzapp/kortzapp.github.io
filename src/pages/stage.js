@@ -18,6 +18,9 @@ const Stage = () => {
                                 create your own cards
                             </li>
                             <li>
+                                share text from external resource with the app to create a new card
+                            </li>
+                            <li>
                                 get challenged based on our spaced repetition algorithm with 4 challenge levels
                             </li>
                             <li>
@@ -58,9 +61,6 @@ const Stage = () => {
                             </li>
                             <li>
                                 context-rich words repetition
-                            </li>
-                            <li>
-                                creating cards from external sources (camera, browser, sound record, etc...)
                             </li>
                             <li>
                                 high quality pronunciation
