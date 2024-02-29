@@ -18,7 +18,7 @@ const Stage = () => {
                                 create your own cards
                             </li>
                             <li>
-                                set card tags for convenient filtering
+                                set card tags for convenient filtering in the library and grouping during challenges (cards with similar tags tend to group up)
                             </li>
                             <li>
                                 set card tip to help you recall the word
