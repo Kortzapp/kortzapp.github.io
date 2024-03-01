@@ -3,8 +3,9 @@
  */
 module.exports = {
     siteMetadata: {
-        title: `Kortz App`,
-        siteUrl: `https://www.kortz.app`
+        title: `Kortz - Flashcards`,
+        siteUrl: `https://www.kortz.app`,
+        description: `Kortz flashcards spaced repetition app`,
     },
     plugins: [{
         resolve: `gatsby-plugin-gtag`,

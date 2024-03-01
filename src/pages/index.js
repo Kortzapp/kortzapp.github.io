@@ -2,6 +2,7 @@ import * as React from "react"
 import Menu from "./components/menu";
 import './about.css';
 import {Link} from "gatsby";
+import {Seo} from "../component/seo";
 
 const IndexPage = () => {
     return (
@@ -89,4 +90,6 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+    <Seo />
+)
