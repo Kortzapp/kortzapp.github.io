@@ -24,7 +24,7 @@ const Stage = () => {
                                 set card tip to help you recall the word
                             </li>
                             <li>
-                                share text from external resource with the app to create a new card
+                                share text from external resource with the app to create new cards
                             </li>
                             <li>
                                 get challenged based on our spaced repetition algorithm with 4 challenge levels
