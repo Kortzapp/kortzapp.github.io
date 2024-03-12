@@ -34,6 +34,8 @@ const About = () => {
                     advantage. It harnesses the effectiveness of spaced repetition, surpassing massed presentation
                     or "cramming". Cepeda et al.'s study (2006) demonstrated that spaced practice consistently
                     outperformed massed practice in memory tasks, a principle embedded in our app's design.
+                    You can read more about scientific learning about the advantages of spacing effect over cramming <a href={"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759977/#:~:text=In%20brief%2C%20spacing%20works%20by,that%20are%20hampered%20by%20cramming."}>here</a>.
+
                 </p>
             </section>
             <section>
@@ -55,18 +57,15 @@ const About = () => {
                     difficulty</a> level for tests, combined with feedback, ensures an optimal learning experience.
                     Accessing your knowledge, our app tailors the learning process, surpassing passive studying or
                     testing without feedback. The app adapts by increasing the complexity of challenges as you
-                    progress through the learning
-                    journey, ensuring a tailored and focused
-                    language learning experience.
+                    progress through the learning journey, ensuring a tailored and focused language learning experience.
                 </p>
             </section>
             <section>
                 <h3>Spaced Repetition Mechanism</h3>
                 <p>
                     Our app employs a customized implementation of the <a
-                    href={"https://en.wikipedia.org/wiki/Leitner_system"}>Leitner System</a>, a proven <a
-                    href={"https://en.wikipedia.org/wiki/Spaced_repetition"}> spaced repetition</a>
-                    mechanism, ensuring optimal learning. It integrates seamlessly with your diverse learning
+                    href={"https://en.wikipedia.org/wiki/Leitner_system"}>Leitner System</a>,
+                    a proven <a href={"https://en.wikipedia.org/wiki/Spaced_repetition"}>spaced repetition</a> mechanism, ensuring optimal learning. It integrates seamlessly with your diverse learning
                     resources, becoming a valuable ally in your language learning journey.
                 </p>
             </section>

@@ -1,4 +1,12 @@
 /* ... existing styles ... */
+.advert {
+    background-color: yellow;
+    min-height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
 .about-section {
     max-width: 800px;

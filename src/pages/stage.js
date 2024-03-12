@@ -18,16 +18,18 @@ const Stage = () => {
                                 create your own cards
                             </li>
                             <li>
-                                set card tags for convenient filtering in the library and grouping during challenges (cards with similar tags tend to group up)
+                                set card tags for convenient filtering in the library and grouping during challenges
+                                (cards with similar tags tend to group up)
                             </li>
                             <li>
                                 set card tip to help you recall the word
                             </li>
                             <li>
-                                share text from external resource with the app to create new cards
+                                share text from external resource with the app, choose or take camera pictures to create
+                                new cards
                             </li>
                             <li>
-                                get challenged based on our spaced repetition algorithm with 4 challenge levels
+                                get challenged based on our spaced repetition algorithm with 5 challenge levels
                             </li>
                             <li>
                                 store your progress securely in the cloud
@@ -47,14 +49,14 @@ const Stage = () => {
                             <li>
                                 multiple language pairs
                             </li>
+                            <li>
+                                translation suggestions
+                            </li>
                         </ul>
                         <h4>New features to expect</h4>
                         <ul>
                             <li>
                                 new challenge levels
-                            </li>
-                            <li>
-                                translation suggestions
                             </li>
                             <li>
                                 words suggestions
@@ -78,6 +80,7 @@ const Stage = () => {
                 <section>
                     <h4>The existing challenge levels</h4>
                     <ul>
+                        <li>simple cards review</li>
                         <li>match 4 words with their 4 translations</li>
                         <li>match a word with its translation out of 4 options</li>
                         <li>match a word with its original out of 4 options</li>
@@ -87,8 +90,9 @@ const Stage = () => {
                     <ul>
                         <li>pick missing characters into original word with translation visible</li>
                         <li>fill in missing original word in a sentence with visible translation</li>
-                        <li>pick missing original words out of 4 options to fill in gaps in a text</li>
-                        <li><a href={"https://en.wikipedia.org/wiki/Cloze_test"}>Cloze Deletion Test</a></li>
+                        <li>pick missing original words out of 4 options to fill in gaps in a text (<a
+                            href={"https://en.wikipedia.org/wiki/Cloze_test"}>Cloze Deletion Test</a>)
+                        </li>
                     </ul>
                 </section>
             </div>
