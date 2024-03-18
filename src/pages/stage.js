@@ -29,7 +29,7 @@ const Stage = () => {
                                 new cards
                             </li>
                             <li>
-                                get challenged based on our spaced repetition algorithm with 5 challenge levels
+                                get challenged based on our spaced repetition algorithm with 8 challenge levels
                             </li>
                             <li>
                                 store your progress securely in the cloud
@@ -73,6 +73,9 @@ const Stage = () => {
                             <li>
                                 high quality pronunciation
                             </li>
+                            <li>
+                                alike words grouping in challenges
+                            </li>
                         </ul>
                     </p>
                 </section>
@@ -84,13 +87,13 @@ const Stage = () => {
                         <li>match 4 words with their 4 translations</li>
                         <li>match a word with its translation out of 4 options</li>
                         <li>match a word with its original out of 4 options</li>
-                        <li>type in missing characters into original word with translation visible</li>
+                        <li>type in missing characters into original word with translation visible and some (depending on the current difficulty level) or none letters open</li>
                     </ul>
                     <h4>More challenge levels to expect</h4>
                     <ul>
                         <li>pick missing characters into original word with translation visible</li>
                         <li>fill in missing original word in a sentence with visible translation</li>
-                        <li>pick missing original words out of 4 options to fill in gaps in a text (<a
+                        <li>pick missing words to fill in gaps in a text (<a
                             href={"https://en.wikipedia.org/wiki/Cloze_test"}>Cloze Deletion Test</a>)
                         </li>
                     </ul>
