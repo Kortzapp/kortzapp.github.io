@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "app.kortz",
       "sha256_cert_fingerprints": [
-        "BB:AD:DF:CA:79:05:3B:23:2A:23:ED:7A:87:05:4C:5C:A0:68:12:16:64:35:19:74:7A:EA:D3:B3:D2:66:CA:0E"
+        "BB:AD:DF:CA:79:05:3B:23:2A:23:ED:7A:87:05:4C:5C:A0:68:12:16:64:35:19:74:7A:EA:D3:B3:D2:66:CA:0E",
+        "57:0E:EF:D1:3B:C1:46:0B:8C:F1:F2:E7:86:79:6C:AA:DE:1C:08:7E:5E:79:DE:97:46:1A:F5:EC:AC:29:64:B0"
       ]
     }
   }
