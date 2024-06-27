@@ -55,15 +55,6 @@ const IndexPage = () => {
                         </ul>
                     </section>
                     <section>
-                        <h3>Become a Tester</h3>
-                        <p>
-                            We invite you to become a part of our testing community! Help us shape the future by
-                            providing
-                            valuable feedback. <Link to={"/testing"}>click here</Link> if you're interested.
-                            <br/>Currently, for Android users only.
-                        </p>
-                    </section>
-                    <section>
                         <h3><Link to="/stage">Current Development Stage</Link></h3>
                         <div>
                             You can always decide to quit, we will send you all your cards in a desirable format then.
