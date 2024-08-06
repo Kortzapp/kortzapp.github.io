@@ -2,106 +2,107 @@ import React from "react";
 
 const PolicyPage = () => (
     <main>
-        <h1>Privacy Policy</h1>
-        <p>
-            This privacy policy explains how our organization (Kortz) uses the personal data
-            collected from you when you use our app Kortz.
-        </p>
-
-        <h2>Topics:</h2>
+        <strong>Privacy Policy</strong><p>This privacy policy applies to the Kortz app (hereby referred to as
+        "Application")
+        for mobile devices that was created by Kortz (hereby referred to as "Service Provider") as an Ad Supported
+        service. This service is intended for use "AS IS".</p><br/><strong>Information Collection and Use</strong><p>The
+        Application collects information (hereby referred to as "Automatically Collected Information") when you download
+        and use it. This information may include information such
+        as</p>
         <ul>
-            <li>What data do we collect?</li>
-            <li>How do we collect your data?</li>
-            <li>How will we use your data?</li>
-            <li>How do we store your data?</li>
-            <li>What are your data protection rights?</li>
-            <li>Changes to our privacy policy</li>
-            <li>How to contact us</li>
+            <li>Your device's Internet Protocol address (e.g. IP address)</li>
+            <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those
+                pages
+            </li>
+            <li>The time spent on the Application</li>
+            <li>The operating system you use on your mobile device</li>
         </ul>
-
-        <h3>Data We Collect:</h3>
-        <p>Personal identification information (email address)</p>
-
-        <h3>How We Collect Your Data:</h3>
-        <p>
-            You authenticate with a single sign-on 3rd-party provider (Google or
-            Apple). You then provide us with a token that we use to fetch your private
-            data from the corresponding data provider.
-        </p>
-
-        <h3>How We Will Use Your Data:</h3>
+        <br/>
+        <div><p>The Application collects your device's location, which helps the Service Provider determine
+            your approximate geographical location and make use of in below ways:</p>
+            <ul>
+                <li>Geolocation Services: The Service Provider utilizes location data to provide features such as
+                    personalized content, relevant recommendations, and location-based services.
+                </li>
+                <li>Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider
+                    to analyze user behavior, identify trends, and improve the overall performance and functionality
+                    of the Application.
+                </li>
+                <li>Third-Party Services: Periodically, the Service Provider may transmit anonymized location data
+                    to external services. These services assist them in enhancing the Application and optimizing
+                    their offerings.
+                </li>
+            </ul>
+            <p>The Application does <strong>not</strong> gather precise information about the location of
+                your mobile device.</p>
+        </div>
+        <br/><strong>Personal Data Collection</strong><p>For a better experience, while using the Application, the Service Provider may require you to provide us
+        with certain personally identifiable information (hereby referred to as "User Provided Data"): Email.<br/>The
+        information that the Service Provider request will be retained by them and used for user identification.
+        <br/>The Service Provider may use the information you provided to contact you from time to time to provide
+        you with important information, required notices and marketing promotions.</p>
+        <br/><strong>Third Party Access</strong><p>Only aggregated, anonymized data is periodically transmitted
+        to external services to aid the Service Provider in improving the Application and their service. The
+        Service Provider may share your information with third parties in the ways that are described in
+        this privacy statement.</p>
+        <div><br/><p>Please note that the Application utilizes third-party services that have their own
+            Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party
+            service providers used by the Application:</p>
+            <ul>
+                <li><a href="https://www.google.com/policies/privacy/" target="_blank"
+                       rel="noopener noreferrer">Google Play Services</a></li>
+                <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank"
+                       rel="noopener noreferrer">AdMob</a> (separate consent is given and revoked in the Application)
+                </li>
+                <li><a href="https://firebase.google.com/support/privacy/" target="_blank"
+                       rel="noopener noreferrer">Firebase Crashlytics</a></li>
+                <li><a href="https://sentry.io/privacy/" target="_blank"
+                       rel="noopener noreferrer">Sentry</a></li>
+                <li><a href="https://privacy.microsoft.com/privacystatement" target="_blank"
+                       rel="noopener noreferrer">Microsoft Clarity</a></li>
+            </ul>
+        </div>
+        <br/>
+        <p>The Service Provider may disclose User Provided Data:</p>
         <ul>
-            <li>Uniquely identify you in our system</li>
-            <li>
-                Contact you to communicate important information regarding the services
-                we provide
-            </li>
-            <li>Confirm your orders and requests</li>
-            <li>Provide support regarding the services we offer</li>
-        </ul>
-
-        <p>
-            We do not share your data with other parties without your separate
-            explicit request and/or permission.
-        </p>
-
-        <h3>How We Store Your Data:</h3>
-        <p>
-            Your data is securely stored at a datacenter located in Germany. Access to this database is only available
-            to a limited
-            number of people who are legally bound to protect your data.
-        </p>
-
-        <h3>Your Rights as a User Concerning Your Personal Data:</h3>
-        <p>
-            We want to ensure you are fully aware of all your data
-            protection rights. Every user is entitled to the following:
-        </p>
-        <ul>
-            <li>
-                <strong>The right to access:</strong> You can request us to send you
-                your personal data via a communication channel of your choice. If
-                applicable, you are responsible for paying all corresponding fees.
-            </li>
-            <li>
-                <strong>The right to rectification:</strong> You can request that we
-                correct any information you believe is inaccurate or incomplete.
-            </li>
-            <li>
-                <strong>The right to erasure:</strong> You can request that we erase
-                your personal data.
-            </li>
-            <li>
-                <strong>The right to object to processing:</strong> You can object to
-                the processing of your personal data. Some or all of the services might
-                become unavailable, depending on the conditions.
-            </li>
-            <li>
-                <strong>The right to data portability:</strong> You can request that we
-                transfer the data we have collected to another organization. If
-                applicable, you are responsible for paying all corresponding fees.
+            <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+            <li>when they believe in good faith that disclosure is necessary to protect their rights,
+                protect your safety or the safety of others, investigate fraud, or respond to a
+                government request;
             </li>
         </ul>
-        <p>
-            If you make a request, we have one month to respond to you. If you would
-            like to exercise any of these rights, please contact us at our email:
-            contact@kortz.app
-        </p>
-
-        <h3>Changes to Our Privacy Policy:</h3>
-        <p>
-            We keep our privacy policy under regular review and places any
-            updates on this web page. This privacy policy was last updated on
-            02 February 2024.
-        </p>
-
-        <h3>How to Contact Us:</h3>
-        <p>
-            If you have any questions about our privacy policy, the data we
-            hold on you, or you would like to exercise one of your data protection
-            rights, please do not hesitate to contact us.
-        </p>
-        <p>Email us at: contact@kortz.app</p>
+        <p></p>
+        <br/><strong>Opt-Out Rights</strong><p>You can stop all Automatically Collected Information collection by the
+        Application easily by uninstalling it. You may use the standard uninstall processes as may
+        be available as part of your mobile device or via the mobile application marketplace or
+        network.<br/>To remove your consent given to AdMob you can use the Profile screen in the application</p><strong>Data
+        Retention Policy</strong><p>The Service Provider will retain
+        User Provided Data for as long as you use the Application and for a reasonable time
+        thereafter. If you'd like them to delete User Provided Data that you have provided via the
+        Application, please follow to <a href="/adr">Account Deletion Request</a>.</p><br/><strong>Children</strong>
+        <p>The Service Provider does not use the Application
+            to knowingly solicit data from or market to children under the age of 13.</p>
+        <div><br/><p>The Application does not address anyone under the age of 13. The Service
+            Provider does not knowingly collect personally identifiable information from children
+            under 13 years of age. In the case the Service Provider discover that a child under 13
+            has provided personal information, the Service Provider will immediately delete this
+            from their servers. If you are a parent or guardian and you are aware that your child
+            has provided us with personal information, please contact the Service Provider
+            (contact@kortz.app) so that they will be able to take the necessary actions.</p></div>
+        <br/><strong>Security</strong><p>The Service Provider is concerned about safeguarding
+        the confidentiality of your information. The Service Provider provides physical,
+        electronic, and procedural safeguards to protect information the Service Provider
+        processes and maintains.</p><br/><strong>Changes</strong><p>This Privacy Policy may be
+        updated from time to time for any reason. The Service Provider will notify you of any
+        changes to the Privacy Policy by updating this page with the new Privacy Policy. You are
+        advised to consult this Privacy Policy regularly for any changes, as continued use is
+        deemed approval of all changes.</p><br/><p>This privacy policy is effective as of
+        2024-08-05</p><br/><strong>Your Consent</strong><p>By using the Application, you are
+        consenting to the processing of your information as set forth in this Privacy Policy now
+        and as amended by us.</p><br/><strong>Contact Us</strong><p>If you have any questions
+        regarding privacy while using the Application, or have questions about the practices,
+        please contact the Service Provider via email at contact@kortz.app.</p>
+        <hr/>
     </main>
 );
 
