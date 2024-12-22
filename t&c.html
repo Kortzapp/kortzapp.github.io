@@ -1,18 +1,37 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kortz - Scientific Spaced Repetition Flashcards</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body class="bg-gray-50">
+<!-- Header/Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-gray-800"><a href="index.html">Kortz</a></div>
+        </div>
+    </div>
+</nav>
 
-const PolicyPage = () => (
-    <main>
+
+<!-- Hero Section -->
+<section class="pt-28 pb-12 md:pt-32 md:pb-24 px-4">
+    <div class="max-w-6xl mx-auto text-center">
         <strong>Terms &amp; Conditions</strong><br/><p>These terms and conditions applies to the Kortz app (hereby
         referred to as "Application") for mobile devices that was created by Kortz (hereby referred to as "Service
         Provider") as an Ad Supported service.</p>
-            <br/>
-            <p>Upon downloading or utilizing the Application, you are
-        automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand
-        these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of
-        the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the
-        Application, translate the Application into other languages, or create derivative versions are not permitted.
-        All trademarks, copyrights, database rights, and other intellectual property rights related to the Application
-        remain the property of the Service Provider.</p><br/><p>The Service Provider is dedicated to ensuring that the
+        <br/>
+        <p>Upon downloading or utilizing the Application, you are
+            automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand
+            these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of
+            the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the
+            Application, translate the Application into other languages, or create derivative versions are not permitted.
+            All trademarks, copyrights, database rights, and other intellectual property rights related to the Application
+            remain the property of the Service Provider.</p><br/><p>The Service Provider is dedicated to ensuring that the
         Application is as beneficial and efficient as possible. As such, they reserve the right to modify the
         Application or charge for their services at any time and for any reason. The Service Provider assures you that
         any charges for the Application or its services will be clearly communicated to you.</p><br/><p>The Application
@@ -71,7 +90,51 @@ const PolicyPage = () => (
         effective as of 2024-08-05</p><br/><strong>Contact Us</strong><p>If you have any questions or
         suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider
         at contact@kortz.app.</p>
-    </main>
-);
+    </div>
+</section>
 
-export default PolicyPage;
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+        <p>&copy; 2024 Kortz. All rights reserved</p>
+    </div>
+</footer>
+<script>
+    // Select menu button and mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const headerHeight = document.querySelector('nav').offsetHeight; // Get header height
+
+    // Function to toggle menu visibility
+    function toggleMenu() {
+        mobileMenu.classList.toggle('hidden');
+    }
+
+    // Add event listener to menu button
+    menuBtn.addEventListener('click', toggleMenu);
+
+    // Add event listeners to all anchor links for scrolling with offset
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default anchor behavior
+            const targetId = link.getAttribute('href'); // Get the target section ID
+            const targetElement = document.querySelector(targetId); // Get the target element
+
+            if (targetElement) {
+                // Scroll to the target element with an offset
+                const offsetPosition = targetElement.offsetTop - headerHeight; // Offset by header height + margin
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Close menu if link is inside the mobile menu
+            if (mobileMenu.contains(link)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
+</script>
+</body>
+</html>

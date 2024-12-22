@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flashcards spaced repetition app">
+    <title>Kortz - Spaced Repetition Language Flashcards</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body class="bg-gray-50">
+<!-- Header/Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-gray-800"><a href="#hero">Kortz</a></div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="hover:text-blue-600">Features</a>
+                <a href="#how" class="hover:text-blue-600">How It Works</a>
+                <a href="#science" class="hover:text-blue-600">The Science</a>
+                <a href="#download" class="hover:text-blue-600">Download</a>
+            </div>
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+         class="hidden md:hidden bg-white shadow-md overflow-hidden transition-all duration-300 ease-in-out">
+        <a href="#features" class="block px-4 py-2 hover:bg-gray-100">Features</a>
+        <a href="#how" class="block px-4 py-2 hover:bg-gray-100">How It Works</a>
+        <a href="#science" class="block px-4 py-2 hover:bg-gray-100">The Science</a>
+        <a href="#download" class="block px-4 py-2 hover:bg-gray-100">Download</a>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="hero" class="pt-28 pb-12 md:pt-32 md:pb-24 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Spaced Repetition Language Flashcards</h1>
+        <p class="text-xl text-gray-600 mb-8">Learning new language requires a proper mix of tools. Our flashcards app,
+            with a gamified approach inspired by the Leitner System, is your ideal partner.</p>
+        <div class="flex justify-center gap-4">
+            <a href="#download" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700">
+                Start Learning Free
+            </a>
+            <a href="#features-2"
+               class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50">
+                Why Kortz?
+            </a>
+        </div>
+        <div class="mt-12">
+            <img src="images/main_no_shadow.png" alt="App Interface" class="mx-auto md:w-1/2 px-75"/>
+        </div>
+    </div>
+</section>
+
+<!-- Key Features Section -->
+<section class="py-12 md:py-24 bg-white px-4" id="features">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-6">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Smart Memory Boost</h3>
+                <p class="text-gray-600">Our app adds a playful touch to spaced repetition, drawing inspiration from the
+                    Leitner System.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Flexible Learning</h3>
+                <p class="text-gray-600">Create custom flashcards that match what you're studying across various
+                    learning resources.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Steady Progress</h3>
+                <p class="text-gray-600">Elevate your learning with our organized review system that helps you remember
+                    better.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Unique Features Section -->
+<section class="py-12 md:py-24 px-4 bg-gray-50" id="features-2">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+        <div class="space-y-6">
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Our spaced repetition approach stands out due to its unique
+                    combination of properties. <a href="#science" class="text-blue-600 hover:underline">Learn more
+                        about it
+                        here</a></p>
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Operates offline, excluding features that inherently require an
+                    internet connection (such as: cards sharing, context learning)</p>
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Context learning with AI generated examples
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Train subjects with their definite articles (if available in your
+                    target language)
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Use across multiple devices without restrictions</p>
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Subscribe to shared or public collections to receive card updates
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Share your cards with friends, family members or students
+            </div>
+            <div class="flex items-start space-x-4">
+                <div class="w-6 h-6 rounded-full bg-blue-500 flex-shrink-0 mt-1"></div>
+                <p class="text-lg text-gray-700">Easily create your own cards from camera, text or images
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it works Section -->
+<section id="how" class="py-12 md:py-24 bg-white px-4">
+    <div class="max-w-6xl mx-auto px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">How it works</h2>
+        <div class="grid md:grid-cols-1 gap-12">
+            <div class="space-y-4">
+                <p class="text-gray-600 first-line:pl-4 text-lg">
+                    Our spaced repetition algorithm monitors your progress with every card, automatically adjusting the
+                    timing for optimal learning. </p>
+                <p class="text-gray-600 first-line:pl-4 text-lg">
+                    With each correct answer, the interval and difficulty level increase, while incorrect answers
+                    shorten the review period and decrease difficulty level. The intervals range from a few minutes to
+                    years.</p>
+                <p class="text-gray-600 first-line:pl-4 text-lg">
+                    You can also choose to focus on particular collections or even cram cards outside the regular spaced
+                    repetition schedule — giving you complete control over your learning experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Exercise Types Section -->
+<section class="py-12 md:py-24 bg-gray-50 px-4">
+    <!-- Carousel Container -->
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Adaptive Learning Exercises</h2>
+    <div class="flex items-center justify-center">
+        <!-- Carousel Container -->
+        <div class="relative w-full max-w-4xl overflow-hidden">
+            <!-- Slides -->
+            <div id="carouselSlides" class="flex transition-transform duration-500">
+                <div class="w-full flex-shrink-0">
+                    <div class="rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Classic Flashcards</h3>
+                        <img src="images/browse_no_shadow.png" alt="Classic Flashcards"
+                             class="rounded-lg mb-4 mx-auto w-1/2 h-auto"/>
+                        <p class="text-gray-600">Traditional flashcard review</p>
+                    </div>
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <div class="rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Word Matching</h3>
+                        <img src="images/4x4_no_shadow.png" alt="Word Matching"
+                             class="rounded-lg mb-4 mx-auto w-1/2 h-auto"/>
+                        <p class="text-gray-600">Match words with their meanings</p>
+                    </div>
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <div class="rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Multiple Choice</h3>
+                        <img src="images/multi_no_shadow.png" alt="Multiple Choice"
+                             class="rounded-lg mb-4 mx-auto w-1/2 h-auto"/>
+                        <p class="text-gray-600">Choose correct answer - both directions</p>
+                    </div>
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <div class="rounded-lg p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Fill in the Blanks</h3>
+                        <img src="images/blanks_no_shadow.png" alt="Fill in the Blanks"
+                             class="rounded-lg mb-4 mx-auto w-1/2 h-auto"/>
+                        <p class="text-gray-600">Fill in missing letters. Consists of 3 difficulty levels</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="prevButton"
+                    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900">
+                &#8592;
+            </button>
+            <button id="nextButton"
+                    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900">
+                &#8594;
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Scientific Principles Section -->
+<section id="science" class="py-12 md:py-24 bg-white px-4">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Science</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Memory and Repetition</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Ever wondered why you can remember a telephone number for years but struggle with a random
+                    seven-digit number? Our app understands the science behind it – the transition from short-term to
+                    long-term memory through repetition.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Forgetting Curve</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    <a href="https://en.wikipedia.org/wiki/Forgetting_curve" class="text-blue-600 hover:underline">Forgetting
+                        curve</a>,
+                    suggests that newly acquired knowledge diminishes without conscious review. Hermann Ebbinghaus'
+                    work emphasizes that each repetition increases the optimal
+                    interval before the next review.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Testing Effect</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    The <a href="https://en.wikipedia.org/wiki/Testing_effect" class="text-blue-600 hover:underline">testing
+                    effect</a>, also known as
+                    retrieval practice, is a cornerstone of our app. By dedicating
+                    part of the learning period to retrieving information, our app maximizes long-term retention.
+                    Repeated testing has proven to outperform repeated studying, and the app employs spaced
+                    repetition to enhance the testing effect, creating lasting connections in memory.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Spacing Effect</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    The <a href="https://en.wikipedia.org/wiki/Spacing_effect" class="text-blue-600 hover:underline">spacing</a>
+                    effect highlights the power of spaced-out study sessions. Cepeda et al.'s study (2006) demonstrated
+                    that spaced practice consistently
+                    outperformed massed practice in memory tasks.
+                    You can read more about scientific learning about the advantages of spacing effect over cramming <a
+                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759977/#:~:text=In%20brief%2C%20spacing%20works%20by,that%20are%20hampered%20by%20cramming."
+                        class="text-blue-600 hover:underline">here</a>.
+
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Feedback and Desirable Difficulty</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Getting feedback is pivotal, and our app seamlessly integrates it. Determining a <a
+                        href="https://en.wikipedia.org/wiki/Desirable_difficulty" class="text-blue-600 hover:underline">desirable
+                    difficulty</a> level for tests, combined with feedback, ensures an optimal learning experience.
+                    Accessing your knowledge, our app tailors the learning process, surpassing passive studying or
+                    testing without feedback. The app adapts by increasing the complexity of challenges as you
+                    progress through the learning journey, ensuring a tailored and focused language learning experience.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Spaced Repetition Mechanism</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Our app employs a customized implementation of the <a
+                        href="https://en.wikipedia.org/wiki/Leitner_system" class="text-blue-600 hover:underline">Leitner
+                    System</a>,
+                    a proven <a href="https://en.wikipedia.org/wiki/Spaced_repetition"
+                                class="text-blue-600 hover:underline">spaced repetition</a>
+                    mechanism, ensuring optimal learning. It integrates seamlessly with your diverse learning
+                    resources, becoming a valuable ally in your language learning journey.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">Owning your Library</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Learning superfluous information can contribute to retrieval-induced forgetting,
+                    as explained <a href="https://en.wikipedia.org/wiki/Retrieval-induced_forgetting"
+                                    class="text-blue-600 hover:underline">here</a>.
+                    Your mission is to curate relevant content with the assistance of other language apps, books,
+                    videos,
+                    daily experiences, and more. This approach ensures that the app delivers a concentrated and
+                    personalized language learning experience.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Download Section -->
+<section id="download" class="pt-12 md:pt-24 bg-gray-50 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">Start Learning Today</h2>
+        <p class="text-xl text-gray-600">Available for Android:</p>
+        <div class="flex justify-center flex-wrap py-6 md:py-6 mb-8">
+            <a href="https://play.google.com/store/apps/details?id=app.kortz"><img src="images/google-play.png"
+                                                                                   alt="Play Store"
+                                                                                   class="h-32 cursor-pointer"/></a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+        <p>&copy; 2024 Kortz. All rights reserved</p>
+    </div>
+    <div class="max-w-6xl mx-auto text-center">
+        <p><a href="t&c.html">Terms and conditions</a> | <a href="policy.html">Privacy policy</a></p>
+    </div>
+    <div class="max-w-6xl mx-auto text-center">
+        <p><a href="mailto:contact@kortz.app">contact@kortz.app</a></p>
+    </div>
+</footer>
+<script>
+    // Select menu button and mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const headerHeight = document.querySelector('nav').offsetHeight; // Get header height
+
+    // Function to toggle menu visibility
+    function toggleMenu() {
+        mobileMenu.classList.toggle('hidden');
+    }
+
+    // Add event listener to menu button
+    menuBtn.addEventListener('click', toggleMenu);
+
+    // Add event listeners to all anchor links for scrolling with offset
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default anchor behavior
+            const targetId = link.getAttribute('href'); // Get the target section ID
+            const targetElement = document.querySelector(targetId); // Get the target element
+
+            if (targetElement) {
+                // Scroll to the target element with an offset
+                const offsetPosition = targetElement.offsetTop - headerHeight; // Offset by header height + margin
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Close menu if link is inside the mobile menu
+            if (mobileMenu.contains(link)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
+
+    // JavaScript to control carousel
+    const slides = document.getElementById('carouselSlides');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    const totalSlides = slides.children.length;
+    let currentIndex = 0;
+
+    // Variables for touch handling
+    let startX = 0;
+    let currentX = 0;
+    let isDragging = false;
+
+    // Function to update the carousel position
+    function updateCarousel() {
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Navigation buttons
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    });
+
+    // Touch event handlers
+    slides.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+    });
+
+    slides.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        currentX = e.touches[0].clientX;
+    });
+
+    slides.addEventListener('touchend', () => {
+        if (!isDragging) return;
+        const deltaX = startX - currentX;
+
+        if (deltaX > 50) {
+            // Swipe left
+            currentIndex = (currentIndex + 1) % totalSlides;
+        } else if (deltaX < -50) {
+            // Swipe right
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        }
+
+        updateCarousel();
+        isDragging = false;
+    });
+
+    // Optional: Prevent default touch behavior (e.g., scrolling) inside the carousel
+    slides.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+    });
+</script>
+</body>
+</html>

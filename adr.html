@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kortz - Scientific Spaced Repetition Flashcards</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body class="bg-gray-50">
+<!-- Header/Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="text-2xl font-bold text-gray-800"><a href="index.html">Kortz</a></div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="pt-28 pb-12 md:pt-32 md:pb-24 px-4">
+    <div class="max-w-6xl mx-auto flex text-center">
+        <h1>Request modification, deletion or any other actions regarding your account or personal data</h1>
+        <p><a href="mailto:contact@kortz.app?subject=AR">Send an email to: contact@kortz.app</a></p>
+    </div>
+</section>
+
+<script>
+    // Select menu button and mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const headerHeight = document.querySelector('nav').offsetHeight; // Get header height
+
+    // Function to toggle menu visibility
+    function toggleMenu() {
+        mobileMenu.classList.toggle('hidden');
+    }
+
+    // Add event listener to menu button
+    menuBtn.addEventListener('click', toggleMenu);
+
+    // Add event listeners to all anchor links for scrolling with offset
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default anchor behavior
+            const targetId = link.getAttribute('href'); // Get the target section ID
+            const targetElement = document.querySelector(targetId); // Get the target element
+
+            if (targetElement) {
+                // Scroll to the target element with an offset
+                const offsetPosition = targetElement.offsetTop - headerHeight; // Offset by header height + margin
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Close menu if link is inside the mobile menu
+            if (mobileMenu.contains(link)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
+</script>
+</body>
+</html>
