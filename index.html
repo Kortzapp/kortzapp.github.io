@@ -210,11 +210,11 @@
 
             <!-- Navigation Buttons -->
             <button id="prevButton"
-                    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900">
+                    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-blue-300 text-white p-3 rounded-full hover:bg-blue-300">
                 &#8592;
             </button>
             <button id="nextButton"
-                    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900">
+                    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-300 text-white p-3 rounded-full hover:bg-blue-300">
                 &#8594;
             </button>
         </div>
@@ -376,11 +376,6 @@
     const totalSlides = slides.children.length;
     let currentIndex = 0;
 
-    // Variables for touch handling
-    let startX = 0;
-    let currentX = 0;
-    let isDragging = false;
-
     // Function to update the carousel position
     function updateCarousel() {
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
@@ -395,38 +390,6 @@
     nextButton.addEventListener('click', () => {
         currentIndex = (currentIndex + 1) % totalSlides;
         updateCarousel();
-    });
-
-    // Touch event handlers
-    slides.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
-
-    slides.addEventListener('touchmove', (e) => {
-        if (!isDragging) return;
-        currentX = e.touches[0].clientX;
-    });
-
-    slides.addEventListener('touchend', () => {
-        if (!isDragging) return;
-        const deltaX = startX - currentX;
-
-        if (deltaX > 50) {
-            // Swipe left
-            currentIndex = (currentIndex + 1) % totalSlides;
-        } else if (deltaX < -50) {
-            // Swipe right
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        }
-
-        updateCarousel();
-        isDragging = false;
-    });
-
-    // Optional: Prevent default touch behavior (e.g., scrolling) inside the carousel
-    slides.addEventListener('touchmove', (e) => {
-        e.preventDefault();
     });
 </script>
 </body>
