@@ -320,7 +320,8 @@
                     You can read more about scientific learning about the advantages of spacing effect over cramming <a
                         href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8759977/#:~:text=In%20brief%2C%20spacing%20works%20by,that%20are%20hampered%20by%20cramming."
                         class="text-blue-600 hover:underline">here</a>.
-                    You can also <a href="https://en.wikipedia.org/wiki/Cramming_(education)" class="text-blue-600 hover:underline">cram</a> cards with Kortz.
+                    You can also <a href="https://en.wikipedia.org/wiki/Cramming_(education)"
+                                    class="text-blue-600 hover:underline">cram</a> cards with Kortz.
                 </p>
             </div>
             <div class="space-y-4">
@@ -381,7 +382,9 @@
         <p>&copy; 2024 Kortz. All rights reserved</p>
     </div>
     <div class="max-w-6xl mx-auto text-center">
-        <p><a href="t&c.html" class="text-white text-sm">Terms and conditions</a> | <a href="policy.html" class="text-white text-sm">Privacy policy</a></p>
+        <p><a href="t&c.html" class="text-white text-sm">Terms and conditions</a> | <a href="policy.html"
+                                                                                       class="text-white text-sm">Privacy
+            policy</a></p>
     </div>
     <div class="max-w-6xl mx-auto text-center">
         <p><a href="mailto:contact@kortz.app" class="text-white text-sm">contact@kortz.app</a></p>
@@ -410,7 +413,7 @@
 
             if (targetElement) {
                 // Scroll to the target element with an offset
-                const offsetPosition = targetElement.offsetTop - headerHeight; // Offset by header height + margin
+                const offsetPosition = targetElement.offsetTop - headerHeight; // Offset by header height
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
@@ -422,6 +425,13 @@
                 mobileMenu.classList.add('hidden');
             }
         });
+    });
+
+    // Add event listener to close menu when clicked outside
+    document.addEventListener('click', event => {
+        if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.add('hidden');
+        }
     });
 
     // JavaScript to control carousel
